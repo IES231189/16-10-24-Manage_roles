@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-edit.button',
+  selector: 'app-edit',
   templateUrl: './edit.button.component.html',
   styleUrl: './edit.button.component.css'
 })
