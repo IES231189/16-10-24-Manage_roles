@@ -1,1 +1,18 @@
-<p>component.table works!</p>
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let col of columns">{{col.header}}</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let col of columns">{{row[col.field]}}</td>
+      <td>
+        <app-edit (click)="onEdit(row)"></app-edit>
+        <app-delete (click)="onDelete(row)"></app-delete>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
