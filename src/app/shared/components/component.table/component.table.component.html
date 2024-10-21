@@ -1,18 +1,18 @@
+
 <table>
   <thead>
     <tr>
-      <th *ngFor="let col of columns">{{col.header}}</th>
+      <th *ngFor="let col of columns">{{ col.header }}</th>
       <th>Acciones</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let row of data">
-      <td *ngFor="let col of columns">{{row[col.field]}}</td>
+      <td *ngFor="let col of columns">{{ row[col.field] }}</td>
       <td>
-        <app-edit (click)="onEdit(row)"></app-edit>
-        <app-delete (click)="onDelete(row)"></app-delete>
+        <button (click)="onEdit(row)">Editar</button>
+        <button (click)="onDelete(row)">Eliminar</button>
       </td>
     </tr>
   </tbody>
-
 </table>
