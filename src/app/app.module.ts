@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './Auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { ProductsModule } from './products/products.module';
+import { DashboardComponentComponent } from './dashboard/dashboard-component/dashboard-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardComponentComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    SharedModule,ProductsModule
+    SharedModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

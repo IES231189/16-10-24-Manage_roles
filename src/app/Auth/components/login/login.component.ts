@@ -20,7 +20,7 @@ export class LoginComponent {
 
     if(success){
       console.log('Usuario existe')
-      this.router.navigate(['/Dashboard']);
+      this.router.navigate(['/dashboard']);
     }else{
       this.errorMessage = 'Credenciales invalidas'
     }
